@@ -26,4 +26,41 @@ iface = gr.Interface(
 
 )
 
+# Custom CSS to style the Gradio interface
+custom_css = """
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 2em;
+        background-color: #f9f9f9;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        text-align: center;
+        color: #666;
+    }
+    .input-textbox, .output-textbox {
+        font-size: 1.2em;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+    .slider {
+        margin: 20px 0;
+    }
+    .btn-primary {
+        background-color: #28a745;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+"""
+
+
 iface.launch(share=True)
