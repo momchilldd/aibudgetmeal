@@ -1,0 +1,4 @@
+gradio
+torch
+faiss-cpu
+transformers
