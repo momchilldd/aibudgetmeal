@@ -12,7 +12,6 @@ def recommend_meal_wrapper(preference, budget):
     
     return recommend_meal(preference, budget)
 
-# Create an enhanced Gradio interface with a description and examples
 iface = gr.Interface(
     fn=recommend_meal_wrapper,
     inputs=[
@@ -26,7 +25,6 @@ iface = gr.Interface(
 
 )
 
-# Custom CSS to style the Gradio interface
 custom_css = """
     .container {
         max-width: 800px;
